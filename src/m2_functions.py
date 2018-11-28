@@ -21,6 +21,8 @@ import rosegraphics as rg
 
 
 def main():
+    turtle('yellow', 10)
+    turtle('teal', 3)
     print(pythag(5, 12))
     """
     TESTS the functions that you will write below.
@@ -47,7 +49,7 @@ def pythag (a, b):
     return ((a ** 2 + b ** 2)**.5)
 
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -69,14 +71,28 @@ def pythag (a, b):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# DONE: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
 
+import rosegraphics as rg
+
+def turtle(color, thickness):
+    window = rg.TurtleWindow()
+    sally = rg.SimpleTurtle('turtle')
+    tom = rg.SimpleTurtle('turtle')
+
+    tom.pen = rg.Pen('green', thickness)
+    sally.pen = rg.Pen(color, 5)
+
+    tom.forward(100)
+    sally.backward(100)
+    window.close_on_mouse_click()
+
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
