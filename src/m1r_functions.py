@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO:  READ the code below. TRACE (by hand) the execution of the code,
+# DONE:  READ the code below. TRACE (by hand) the execution of the code,
 # predicting what will get printed.  Then run the code
 # and compare your prediction to what actually was printed.
 # Then mark this _TODO_ as DONE and commit-and-push your work.
@@ -31,3 +31,17 @@ def hello_and_goodbye(person1, person2):
 
 
 main()
+
+###############################################################################
+# PREDICTION:
+# Hello, Snow White, how are things?
+# Goodbye, Bashful, see you later!
+#   Ciao!
+#   Bai Bai!
+# Hello, Grumpy, how are things?
+# Hello, Sleepy, how are things?
+# Hello, Magic Mirror, how are things?
+# Goodbye, Cruel Queen, see you later!
+#   Ciao!
+#   Bai Bai!
+################################################################################
