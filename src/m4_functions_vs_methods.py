@@ -4,11 +4,11 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Kaitlin Weik.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   With your instructor, READ the file   methods_vs_functions.txt
 #   in this project, ASKING QUESTIONS as needed to understand its contents.
 #   After you have done so, mark this _TODO_ as DONE
@@ -98,7 +98,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
         my_turtle.left(twist)
 
 ###############################################################################
-# TODO: 3.
+# DONE: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -135,8 +135,17 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+
+    tle = rg.SimpleTurtle('turtle')
+    tle.pen = rg.Pen('brown', 5)
+    tle.forward(150)
+    tle.left(90)
+    tle.forward(50)
+    tle.backward(100)
+
+
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
 
@@ -151,8 +160,13 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
+
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
+
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -197,8 +211,208 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+
+    susan = rg.SimpleTurtle('turtle')
+    susan.pen = rg.Pen('blue', 5)
+
+    #1
+    susan.backward(150)
+
+    #2
+    susan.speed = 1
+    susan.forward(100)
+    susan.left(90)
+    susan.forward(100)
+    susan.left(90)
+    susan.forward(100)
+    susan.left(90)
+    susan.forward(100)
+    susan.left(90)
+    susan.left(30)
+    susan.forward(100)
+    susan.left(90)
+    susan.forward(100)
+    susan.left(90)
+    susan.forward(100)
+    susan.left(90)
+    susan.forward(100)
+
+    #3
+    susan.speed = 5
+    susan.pen = rg.Pen('red', 5)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(15)
+
+    #4
+    susan.pen_up()
+    susan.right(270)
+    susan.forward(135)
+    susan.pen_down()
+    susan.speed = 100
+    susan.pen = rg.Pen('yellow', 35)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(60)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(60)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(60)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(60)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(60)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(60)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(60)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(90)
+    susan.forward(300)
+    susan.left(60)
+
+    #5
+    susan.pen = rg.Pen('black', 3)
+
+    #6
+    susan.backward(200)
+
+    #7
+    susan.draw_circle(30)
+
+    #8
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+    susan.left(90)
+    susan.forward(50)
+
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # DONE: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
